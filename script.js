@@ -107,7 +107,7 @@ document.addEventListener("click",()=>{
 // Creando función de anchura para finder
 function screenWidth(){
     anchoActual = window.innerWidth;
-    if((anchoActual > 900) && (anchoActual<=1912)){
+    if(anchoActual > 900){
         anchoBar = (anchoActual*0.99)-495.350626; //ecuación de la recta para la anchura de finder
         finderMain.style.width = `${anchoBar}px` //la sentencia acepta solo string
     } 
