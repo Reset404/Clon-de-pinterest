@@ -1,0 +1,603 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar-pinterest{
+    display: flex;
+    height: 56px;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 16px 80px 16px 8px;
+    z-index: 3;
+    background-color: white;
+    justify-content: center;
+}
+/* ICONO PINTEREST IZQUIERDA */
+.div-icon{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTONES IZQUIERDA DE NAV */
+.button-start{
+    width: 78px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-left: 2px;
+}
+
+#first-arrow{
+    display: none;
+}
+
+.button-start div{
+    width: 71.44px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+}
+
+.button-explore{
+    width: 95.88px;
+    height: 48px;
+    cursor: pointer;
+}
+
+
+.button-explore div{
+    width: 91.88px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+
+.button-create{
+    width: 70.5px;
+    height: 48px;
+    cursor: pointer;
+}
+
+
+.button-create div{
+    width: 70.5px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+/* FIN DE LOS BOTONES IZQUIERDA DE NAV */
+
+/* INICIO DEL BUSCADOR */
+.finder-div-main{
+    box-sizing: border-box;
+    height: 48px;
+    min-width: 418.19px;
+    padding: 0 8px 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.finder-div-div{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    position: relative;
+}
+
+
+
+.finder{
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 98%;
+    border-radius: 2rem;
+    border-style: none;
+    padding-left: 40px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.finder:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+#icon-Finder{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    opacity: 60%;
+}
+
+.finder:focus ~ #icon-Finder-Close{ /* El simbolo "~ = alt 126" es para seleccionar a los hermanos que estén debajo de un elemento en este caso el input está arriba de todo en HTML*/
+    display: block;
+}
+
+#icon-Finder-Close{
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    opacity: 60%;
+    display: none;
+    cursor: pointer;
+}
+
+.finder:focus{
+    outline: 4px solid #0074e88c;
+    padding-left: 16px;
+    background-color: rgb(227, 227, 227);
+}
+
+
+
+.finder:focus ~ #icon-Finder{
+    display: none;
+}
+
+.finder:focus ~ .suggestions {
+    display: block;
+}
+
+#background{
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    z-index: 2;
+    opacity: 25%;
+    display: none;
+}
+
+.suggestions{
+    width: 99%;
+    height: 350px;
+    margin-left: 1.5rem;
+    margin-top: 4px;
+    background-color: white;
+    border-radius: 0 0 2rem 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: none;
+    z-index: 6;
+}
+
+.suggestions-text{
+    font-weight: 600;
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 20px;
+}
+
+.suggestions-div{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 81%;
+}
+
+.suggestions-div-div{
+    background-color: #edecec;
+    width: 310px;
+    height: 124px;
+    border-radius: 15px;
+    display: flex;
+    font-weight: 600;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.suggestions-div-div-fondo{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: inherit;
+    opacity: 0%;
+}
+.suggestions-div-div-fondo:hover{
+    opacity: 15%;
+}
+
+
+.suggestions-div-div div{
+    margin: auto;
+    text-align: center;
+}
+.suggestions-div-div img{
+    width: 40%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    object-fit:fill;
+}
+
+
+/* FIN DEL BUSCADOR */
+
+/* ICONOS DERECHA DEL NAV */
+.icons-main{
+    height: 48px;
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#profile-img{
+    width: 30px;
+    height: 30px;
+}
+.icons-shadow{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.icons-shadow:last-child{
+    height: 24px;
+    width: 24px;
+}
+
+.icons-shadow:hover{
+    background-color: #e0e0e0;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#profile-img{
+    border-radius: 2rem;
+}
+
+/* OPACIDAD DE LOS ICONOS DE LA DERECHA DEL NAV */
+#notifications{
+    opacity: 65%;
+}
+
+#message{
+    opacity: 65%;
+}
+
+#down-arrow{
+    opacity: 65%;
+}
+/* POP UPS DE LOS ICONOS DE LA DERECHA DEL NAV */
+
+.popUp{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 7px;
+    position: absolute;
+    top: 55px;
+    padding: 7px;
+    display: none;
+}
+
+/* APARECEN POP UP'S */
+
+#notifications:hover ~ #notifications-popUp{
+    display: block;
+}
+
+#message:hover ~ #message-popUp{
+    display: block;
+}
+
+#profile-img:hover ~ #profile-img-popUp{
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+
+#down-arrow:hover ~ #down-arrow-popUp{
+    display: block;
+    top: 40px;
+    right: 3px;
+}
+
+
+
+/* MEDIA QUERY'S */
+
+@media screen and (max-width: 1820px){
+    .suggestions{
+        height: 500px;
+    }
+    .suggestions-div{
+        padding: 0 1rem 0 1rem;
+    }
+}
+@media screen and (max-width: 1527px){
+    .suggestions-div-div{
+        width: 300px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 1500px){
+    .suggestions{
+        width: 90%;
+    }
+    .suggestions-div{
+        padding: 0 2rem 0 2rem;
+        height: 85%;
+    }
+    .suggestions-div-div{
+        width: 248px;
+        height: 100px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .suggestions{
+        width: 80%;
+    }
+    .suggestions-div{
+        padding: 0 1rem 0 1rem;
+        height: 85%;
+    }
+    .suggestions-div-div{
+        width: 198px;
+        height: 80px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 1080px){
+    .suggestions-div{
+        padding: 10px;
+        height: 85%;
+    }
+    .suggestions-div-div{
+        width: 158px;
+        height: 64px;
+        font-size: 0.8rem;
+        border-radius: 10px;
+    }
+    .suggestions-div-div img{
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 970px){
+    .suggestions-div{
+        padding: 0;
+        height: 85%;
+    }
+    .suggestions-div-div{
+        width: 158px;
+        height: 64px;
+        border-radius: 10px;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+    .suggestions-div-div img{
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .button-create,.button-explore{
+        display: none;
+    }
+    .button-start div{
+        background-color: transparent;
+        color: black;
+        width: 45px;
+    }
+    .button-start{
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        margin-left: 10px;
+    }
+
+    .button-start:hover{
+        background-color: #e0e0e0 ;
+        
+    }
+    
+    .button-start section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+    }
+
+    #first-arrow{
+        display: block;
+    }
+}
+
+
+.button-start.button-startTwo{
+    background-color: black;
+}
+
+#button-start-text.button-start-Texto{
+    color: white;
+}
+
+
+#button-start-father{
+    width: 180px;
+    height: 129px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#button-start-father div{
+    width: 100%;
+    height: 33%;
+    cursor: default;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+#button-start-father div:hover{
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+#content{
+    columns: 7 236px;
+    column-gap: 0;
+    padding: 6rem 3rem 0 3rem;
+}
+
+.card-image{
+    display: flex;
+    margin-bottom: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    background-color: red;
+    width: 236px;
+    cursor: zoom-in;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.card-image img{
+    max-width: 236px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+
+.save{
+    width: 90.55px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: red;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    opacity: 0%;
+    z-index: 1;
+}
+
+.save:hover{
+    background-color: rgb(217, 0, 0);
+}
+
+.flecha-svg{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: red;
+    border-radius: 2rem;
+    background-color: #e3e3e3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    right: 50px;
+    bottom: 1rem;
+    opacity: 0%;
+}
+
+.puntos-svg{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: red;
+    border-radius: 2rem;
+    background-color: #e3e3e3;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 1rem;
+    z-index: 1;
+    opacity: 0%;
+}
+
+.puntos-svg:hover{
+    background-color: white;
+}
+
+.flecha-svg:hover{
+    background-color: white;
+}
+
+
+.fondo-negro-div{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+    opacity: 0%;
+}
+
+.card-image:hover > .fondo-negro-div
+{
+    opacity: 40%;
+    transition: opacity 0.3s;
+}
+
+.card-image:hover > .flecha-svg
+{
+    opacity: 100%;
+    transition: opacity 0.3s;
+}
+
+.card-image:hover > .puntos-svg
+{
+    opacity: 100%;
+    transition: opacity 0.3s;
+}
+
+.card-image:hover > .save
+{
+    opacity: 100%;
+    transition: opacity 0.3s;
+}
