@@ -68,9 +68,10 @@ finder.addEventListener("click", cerrarPop)
 window.addEventListener("resize",()=>{
     if(window.innerWidth > 900){
         cerrarPop();
-    } else if (window.innerWidth <= 900){
-        finderMain.style.width = "418.18px"
     }
+    // if(window.innerWidth < 391){
+    //     finderMain.style.width = "50px"
+    // }
 })
 
 function cerrarPop(){

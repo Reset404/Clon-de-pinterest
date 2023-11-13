@@ -87,7 +87,7 @@ body{
 .finder-div-main{
     box-sizing: border-box;
     height: 48px;
-    min-width: 418.19px;
+    /* min-width: 418.19px; */
     padding: 0 8px 0 8px;
     display: flex;
     align-items: center;
@@ -600,4 +600,34 @@ body{
 {
     opacity: 100%;
     transition: opacity 0.3s;
+}
+
+
+@media screen and (max-width: 390px){
+    #navbar-pinterest{
+    justify-content: left;
+    width: 390px;
+    }
+
+    #finder-div-main{
+        width: 40px;
+        padding: 0;
+    }
+    #finder-div-main:focus{
+        width: 300px;
+        padding: 0;
+    }
+    .finder{
+        background-color: white;
+    }
+    #suggestions{
+        width: 390px;
+        left: -24px;
+        position: fixed;
+        padding: 0;
+    }
+    #content{
+        padding-left: 0 ;
+        padding-right: 0;
+    }
 }
