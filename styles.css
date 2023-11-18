@@ -12,7 +12,7 @@ body{
     padding: 16px 80px 16px 8px;
     z-index: 3;
     background-color: white;
-    justify-content: center;
+    justify-content: left;
 }
 /* ICONO PINTEREST IZQUIERDA */
 .div-icon{
@@ -87,7 +87,6 @@ body{
 .finder-div-main{
     box-sizing: border-box;
     height: 48px;
-    /* min-width: 418.19px; */
     padding: 0 8px 0 8px;
     display: flex;
     align-items: center;
@@ -434,6 +433,11 @@ body{
     #first-arrow{
         display: block;
     }
+
+    #finder-div-main{
+        background-color: red;
+    }
+
 }
 
 
@@ -489,7 +493,6 @@ body{
     margin-bottom: 1rem;
     position: relative;
     border-radius: 1rem;
-    background-color: red;
     width: 236px;
     cursor: zoom-in;
     margin: auto;
@@ -609,6 +612,7 @@ body{
     width: 390px;
     }
 
+
     #finder-div-main{
         width: 40px;
         padding: 0;
@@ -629,5 +633,20 @@ body{
     #content{
         padding-left: 0 ;
         padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 625px){
+    .card-image{
+        width: 200px;
+    } 
+
+    #content{
+        columns: 2 200px;
+        padding: 6rem 0 0 0;
+    }
+    #content img{
+        width: 100%;
     }
 }

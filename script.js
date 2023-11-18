@@ -69,9 +69,6 @@ window.addEventListener("resize",()=>{
     if(window.innerWidth > 900){
         cerrarPop();
     }
-    // if(window.innerWidth < 391){
-    //     finderMain.style.width = "50px"
-    // }
 })
 
 function cerrarPop(){
@@ -110,6 +107,11 @@ function screenWidth(){
     anchoActual = window.innerWidth;
     if(anchoActual > 900){
         anchoBar = (anchoActual*0.99)-495.350626; //ecuación de la recta para la anchura de finder
+        finderMain.style.width = `${anchoBar}px` //la sentencia acepta solo string
+    } 
+
+    if(anchoActual <= 900 && anchoActual >= 391){
+        anchoBar = (anchoActual*1.0019646365422)-331.7681728880157 //nueva ecuación de la recta entre rangos
         finderMain.style.width = `${anchoBar}px` //la sentencia acepta solo string
     } 
 }
